@@ -34,7 +34,7 @@ This is a simple blog system built with PHP and MySQL. The project features two 
 
 
 > **Note:** The project **does not include** the actual `.sql` database export file.  
-> You must manually create the required tables (`users` and `posts`) in your MySQL database.
+> You must manually create the required tables (`users`, `posts` and `comments`) in your MySQL database.
 
 ## 🛠️ How to Set Up
 
@@ -72,6 +72,17 @@ CREATE TABLE posts (
 );
 ```
 
+comments table
+
+```bash
+CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    post_id INT NOT NULL,
+    username VARCHAR(255),
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
 
 🚧 To-Do / Improvements
 Add password hashing ✔️
