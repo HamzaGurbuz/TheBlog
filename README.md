@@ -8,7 +8,7 @@ This is a simple blog system built with PHP and MySQL. The project features two 
 
 - User registration and login (authentication system)
 - Creating and listing blog posts
-- MySQL-based backend with `users` and `posts` tables
+- MySQL-based backend with `users`, `posts` and `comments` tables
 - Clean and minimal code structure
 
 ## 📁 Project Structure
