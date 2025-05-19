@@ -1,0 +1,92 @@
+/* Temel ayarlar */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Üst kısım */
+header {
+   
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* Genel bağlantılar için (örneğin nav a) */
+nav a {
+    background-color: transparent;
+    color: #1d34e8;
+    padding: 6px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e0f3ff;
+    border-color: #0077cc;
+    color: #005fa3;
+}
+
+.btn {
+    background: linear-gradient(135deg, #4fc3f7, #6a82fb);
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #039be5, #5f6cff);
+    transform: scale(1.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Eğer sayfa içinde başka linkler varsa, onların da düzgün görünmesi için */
+a:not(.btn):not(nav a) {
+    background-color: #ffffff;
+    color: #6f5df6;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+}
+
+a:not(.btn):not(nav a):hover {
+    background-color: #f2f0ff;
+    transform: scale(1.04);
+}
+
+
