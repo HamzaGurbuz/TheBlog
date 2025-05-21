@@ -3,7 +3,7 @@ include('db.php');
 
 session_start();
 
-$hata = ''; // Hata mesajı için değişken
+$hata = ''; // Variable for error message
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($_POST['email']);
